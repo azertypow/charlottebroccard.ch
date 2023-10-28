@@ -1,0 +1,169 @@
+.section {
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20vh;
+  display: flex;
+}
+
+.container {
+  width: 90%;
+  max-width: 1440px;
+}
+
+.projet {
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 20vh;
+  display: flex;
+}
+
+.projet.is-inverted {
+  justify-content: flex-end;
+}
+
+.projet__img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.projet__content {
+  width: 40%;
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+}
+
+.projet__content.is-inverted {
+  color: #000;
+  align-items: flex-end;
+  text-decoration: none;
+}
+
+.projet__content.is-last {
+  width: 100%;
+}
+
+.background {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #e7e6e7;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.contact {
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 5vw;
+  margin-right: 5vw;
+  display: flex;
+  position: fixed;
+  top: 0%;
+  bottom: auto;
+  left: auto;
+  right: 0%;
+}
+
+.contact__link {
+  width: 150px;
+  height: 50px;
+  background-image: url('../images/contact.png');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contact__link.is-insta {
+  width: 128px;
+  background-image: url('../images/insta.png');
+}
+
+.image {
+  width: 15%;
+}
+
+.chou {
+  width: 75px;
+  margin-top: 5vw;
+  margin-left: 5vw;
+  position: fixed;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 90%;
+  }
+
+  .projet {
+    margin-bottom: 200px;
+  }
+
+  .projet__content {
+    width: 60%;
+  }
+
+  .image {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .projet {
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .section {
+    padding-top: 80vh;
+  }
+
+  .projet.is-last {
+    margin-bottom: 80vh;
+  }
+
+  .projet__content {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .projet__content.is-inverted {
+    align-items: flex-end;
+  }
+
+  .contact {
+    align-items: flex-end;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .contact__link, .contact__link.is-insta {
+    width: 100px;
+  }
+
+  .image {
+    width: 40%;
+  }
+
+  .chou {
+    width: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .chou__img {
+    width: 100%;
+  }
+}
